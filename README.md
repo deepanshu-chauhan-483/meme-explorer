@@ -1,70 +1,103 @@
-# Getting Started with Create React App
+# MemeVerse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+MemeVerse is a multi-page, highly interactive website where users can explore, upload, and interact with memes. This project showcases advanced frontend development skills, including UI/UX design, animations, state management, performance optimization, API handling, and React best practices.
 
-## Available Scripts
+## 🚀 Features & Functionalities
 
-In the project directory, you can run:
+### 📌 Homepage (Landing Page)
+- Displays trending memes dynamically (fetched from an API)
+- Interactive animations & transitions
+- Dark mode toggle
 
-### `npm start`
+### 📌 Meme Explorer Page
+- Infinite scrolling or pagination
+- Meme category filters (Trending, New, Classic, Random)
+- Search functionality with debounced API calls
+- Sort memes by likes, date, or comments
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📌 Meme Upload Page
+- Upload memes (image/gif format)
+- Add funny captions using a text editor
+- AI-based meme caption generator (using a meme-related API)
+- Meme preview before uploading
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📌 Meme Details Page
+- Dynamic routing (`/meme/:id`)
+- Display meme details, likes, comments, and sharing options
+- Comment system (local storage for now)
+- Like button with animation and local storage persistence
 
-### `npm test`
+### 📌 User Profile Page
+- Shows user-uploaded memes
+- Edit profile info (Name, Bio, Profile Picture)
+- View liked memes (saved in local storage or API)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 📌 Leaderboard Page
+- Top 10 most liked memes
+- User rankings based on engagement
 
-### `npm run build`
+### 📌 404 Page (Easter Egg)
+- A fun, meme-based 404 error page when users visit a non-existent route
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
+- **Next.js/React** - For page routing and component-based architecture
+- **Tailwind CSS** - For styling
+- **Framer Motion / GSAP** - For animations and smooth transitions
+- **Redux Toolkit / Context API** - For state management
+- **Local Storage / IndexedDB** - For caching data
+- **Meme APIs** - For fetching memes dynamically
+- **Cloudinary / Firebase** - For image uploads and storage
+- **Lighthouse / React Profiler** - For performance optimization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📡 Free APIs Used
+### Meme APIs
+- **Imgflip API** - Generate and fetch popular memes [(Docs)](https://imgflip.com/api)
+- **Meme Generator API** - Create memes dynamically [(Docs)](https://memegenerator.net/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Image Upload & Storage APIs
+- **ImgBB API** - Free image hosting for meme uploads [(Docs)](https://api.imgbb.com/)
 
-### `npm run eject`
+## 🏆 Skills Demonstrated
+✅ **UI/UX Design** - Aesthetically pleasing and user-friendly layout  
+✅ **Animations** - Smooth transitions, page loads, and UI feedback  
+✅ **State Management** - Efficient use of Redux Toolkit or Context API  
+✅ **API Handling** - Efficient API calls with caching and loading states  
+✅ **Performance Optimization** - Lighthouse audits and React Profiler improvements  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📌 Getting Started
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/deepanshu-chauhan-483/meme-explorer.git
+cd meme-explorer
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2️⃣ Install Dependencies
+```bash
+yarn install
+# or
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3️⃣ Start the Development Server
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4️⃣ Build for Production
+```bash
+yarn build
+# or
+npm run build
+```
 
-## Learn More
+## 🤝 Contributing
+We welcome contributions! Feel free to open an issue or submit a pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📜 License
+This project is licensed under the MIT License.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+🎉 **Enjoy creating and sharing memes with Meme-Explorer!** 🎉
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
