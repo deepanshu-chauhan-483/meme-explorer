@@ -9,7 +9,7 @@ export default function BallTrail() {
     if (!containerRef.current) return;
 
     const container = containerRef.current;
-    const numBalls = 30;
+    const numBalls = 5;
     const balls = [];
 
     // Create balls
